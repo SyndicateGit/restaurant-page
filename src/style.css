@@ -1,5 +1,25 @@
 :root{
   font-family: 'Montserrat', cursive;
+  --font-color: white;
+  --header-background: rgba(0, 0, 0, 75%);
+  --footer-background: rgba(0, 0, 0, 75%);
+}
+
+body{
+  background-image: url(./images/background.jpg);
+  background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: 50% 60%;
+  background-attachment: fixed;
+
+  margin: 0px;
+  padding: 0px;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
 }
 
 /*Removes link color and underline*/
@@ -8,21 +28,37 @@ a{
   color: inherit;
 }
 
+/*Header Section*/
+.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--header-background);
+}
+
+.header>h1{
+  font-family: 'Great Vibes';
+  font-size: 4rem;
+  color: var(--font-color);
+}
 /*FOOTER SECTION*/
-  /*Footer layout*/
-  .footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #github_link{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  /*Github icon*/
-  #github-icon{
-    width: 25px;
-  }
+/*Footer layout*/
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--font-color);
+  background-color: var(--footer-background);
+}
+#github_link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*Github icon*/
+#github-icon{
+  width: 25px;
+}
 
 
