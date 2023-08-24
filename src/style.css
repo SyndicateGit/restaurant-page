@@ -1,3 +1,14 @@
 :root{
   font-family: 'Montserrat', cursive;
 }
+
+/*FOOTER SECTION*/
+  /*Github icon*/
+#github-icon{
+  width: 25px;
+}
+    /*Removes SyndicateGit link color and underline*/
+a{
+  text-decoration: none;
+  color: inherit;
+}
