@@ -20,6 +20,7 @@ body{
 .content{
   display: flex;
   flex-direction: column;
+  
 }
 
 /*Removes link color and underline*/
@@ -42,12 +43,38 @@ a{
   font-size: 4rem;
   color: var(--font-color);
 }
+
+.header>nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/*Nav Buttons*/
+.button-nav{
+  background-color: transparent;
+  color: white;
+  font-family: inherit;
+  cursor: pointer;
+
+  width: 70px;
+  height: 50px;
+  border-color: transparent;
+}
+
+nav>.active{
+  border-bottom: 2px solid white;
+}
 /*FOOTER SECTION*/
 /*Footer layout*/
 .footer{
   display: flex;
   justify-content: center;
   align-items: center;
+
+  font-family: inherit;
+
   color: var(--font-color);
   background-color: var(--footer-background);
 }

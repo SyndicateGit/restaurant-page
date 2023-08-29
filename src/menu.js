@@ -1,5 +1,8 @@
 function loadMenu(){
-  console.log("LoadMenu is working")
+  const menu = document.createElement("div");
+  menu.classList.add("menu");
+
+  return menu;
 }
 
 export default loadMenu;
