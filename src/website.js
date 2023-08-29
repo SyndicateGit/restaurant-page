@@ -41,17 +41,18 @@ function createHeader(){
 
   header.appendChild(restaurantName);
   header.appendChild(createHeaderNav());
-  return header
+  return header;
 }
 
 // MAIN SECTION
 
 function createMain(){
-  const main = document.createElement('div');
-  main.className = 'main'
-
-  return main
+  const main = document.createElement('main');
+  main.classList.add("main");
+  main.setAttribute("id", "main");
+  return main;
 }
+
 
 // FOOTER SECTION
 function createGithubIcon(){
