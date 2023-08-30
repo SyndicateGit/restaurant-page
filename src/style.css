@@ -2,7 +2,18 @@
   font-family: 'Montserrat', cursive;
   --font-color: white;
   --header-background: rgba(0, 0, 0, 75%);
+  --main-background: rgba(0, 0, 0, 75%);
+  --menu-Item-background: rgba(0, 0, 0, 60%);
+  --menu-Item-background-active:rgba(99, 99, 99, 40%);
   --footer-background: rgba(0, 0, 0, 75%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body{
@@ -15,13 +26,18 @@ body{
 
   margin: 0px;
   padding: 0px;
+
+  overflow: scroll;
 }
 
 .content{
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   min-height: 100vh;
 }
+
 
 /*Removes link color and underline*/
 a{
@@ -36,6 +52,10 @@ a{
   align-items: center;
   justify-content: center;
   background-color: var(--header-background);
+
+  padding-top: 10px;
+  
+  width: 100%;
 }
 
 .header>h1{
@@ -75,6 +95,45 @@ main{
   justify-content: center;
   
   color: white;
+
+  margin: 1rem;
+  padding: 1rem;
+  max-width: 700px;
+  background-color: var(--main-background);
+
+
+}
+
+/*Menu Page*/
+.menu{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  margin: 3rem;
+}
+.menu-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  cursor: pointer;
+  gap:1rem;
+  background-color: var(--menu-Item-background);
+  transition: background-color 0.3s;
+}
+
+.menu-item>p{
+  text-align: center;
+}
+
+.menu-item:hover{
+  background-color: var(--menu-Item-background-active);
+}
+
+.menu-item>img{
+  width: 60%;
+  height: 30%;
 }
 /*FOOTER SECTION*/
 /*Footer layout*/
@@ -89,6 +148,8 @@ main{
 
   color: var(--font-color);
   background-color: var(--footer-background);
+
+  width: 100%;
 }
 #github_link{
   display: flex;
@@ -98,6 +159,9 @@ main{
 /*Github icon*/
 #github-icon{
   width: 25px;
+
+  /*Change to white icon*/
+  filter: invert(100%) sepia(1%) saturate(2554%) hue-rotate(180deg) brightness(120%) contrast(100%);
 }
 
 

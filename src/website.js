@@ -92,22 +92,17 @@ function createFooter(){
   const footer = document.createElement('div');
   footer.className = 'footer';
   
-  const text = document.createElement('p');
-  text.textContent = 'Copyright © '
-
   const githubLink = document.createElement('a')
   githubLink.id = 'github_link'
   githubLink.href = "https://github.com/SyndicateGit"
-
   const githubAccount = document.createElement('p');
-  githubAccount.textContent = 'SyndicateGit'
+  githubAccount.textContent = 'Copyright © SyndicateGit'
+  
   githubIcon = createGithubIcon();
 
   githubLink.appendChild(githubAccount);
   githubLink.appendChild(githubIcon);
 
- 
-  footer.appendChild(text);
   footer.appendChild(githubLink);
 
   return footer
