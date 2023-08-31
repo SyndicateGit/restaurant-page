@@ -1,5 +1,6 @@
 :root{
   font-family: 'Montserrat', cursive;
+  font-size: 1.2rem;
   --font-color: white;
   --header-background: rgba(0, 0, 0, 75%);
   --main-background: rgba(0, 0, 0, 75%);
@@ -68,7 +69,8 @@ a{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
+
 }
 
 /*Nav Buttons*/
@@ -76,11 +78,13 @@ a{
   background-color: transparent;
   color: white;
   font-family: inherit;
+  font-size: 1rem;
   cursor: pointer;
 
   width: 70px;
   height: 50px;
   border-color: transparent;
+
 }
 
 nav>.active{
@@ -96,14 +100,39 @@ main{
   
   color: white;
 
-  margin: 1rem;
-  padding: 1rem;
+  box-sizing: border-box;
+  align-self: center;
+  margin: 6rem;
+  padding: 4rem;
   max-width: 700px;
   background-color: var(--main-background);
 
+}
+
+/*Home Page*/
+
+.home{
+  width: 600px;
+  height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 
 }
 
+.home>p{
+  font-size: 1.5rem;
+}
+
+#chef{
+  width: 60%;
+  height: 60%;
+
+  /*Change to white png*/
+  filter: invert(100%) sepia(1%) saturate(2554%) hue-rotate(180deg) brightness(120%) contrast(100%);
+}
 /*Menu Page*/
 .menu{
   display: grid;
@@ -117,6 +146,7 @@ main{
   align-items: center;
   justify-content: center;
   height: 300px;
+  min-width: 250px;
   cursor: pointer;
   gap:1rem;
   background-color: var(--menu-Item-background);
@@ -135,6 +165,40 @@ main{
   width: 60%;
   height: 30%;
 }
+
+/*Contact Page*/
+
+.contact{
+  width: 600px;
+  height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  color: white;
+
+}
+
+.phone{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+  width: 100%;
+
+  color: white;
+}
+
+.icon{
+  width: 2rem;
+  height: 2rem;
+
+  /*Convert black to red*/
+  filter: invert(16%) sepia(75%) saturate(7138%) hue-rotate(358deg) brightness(103%) contrast(112%);
+}
+
 /*FOOTER SECTION*/
 /*Footer layout*/
 .footer{

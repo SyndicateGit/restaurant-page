@@ -1,8 +1,27 @@
 function createHome(){
   const home = document.createElement("div");
   home.classList.add("home");
-  home.textContent = "Loading Home...";
+  
+  home.appendChild(createP("Best Pizza in Canada"));
+  home.appendChild(createP("Made with passion since 1998"));
+
+  const img = document.createElement("img");
+  img.src = "/src/images/chef.png";
+  img.alt = "chef";
+  img.id = "chef";
+
+  home.appendChild(img);
+
+  home.appendChild(createP("Order online or visit us!"))
+
   return home;
+}
+
+function createP(sentence){
+  const p = document.createElement("p");
+  p.textContent = sentence;
+
+  return p;
 }
 
 function loadHome(){
