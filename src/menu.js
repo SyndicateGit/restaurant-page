@@ -1,5 +1,5 @@
 // Pizza img imports
-import peperonni from "./images/pizzas/peperonni.png";
+import peperonni from "./images/pizzas/pepperoni.png";
 
 import hawaiian from "./images/pizzas/hawaiian.png";
 
