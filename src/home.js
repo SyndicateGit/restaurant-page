@@ -6,7 +6,7 @@ function createHome(){
   home.appendChild(createP("Made with passion since 1998"));
 
   const img = document.createElement("img");
-  img.src = "/src/images/chef.png";
+  img.src = "./images/chef.png";
   img.alt = "chef";
   img.id = "chef";
 

@@ -32,7 +32,7 @@ function createMenuItem(name, toppings){
   pizzaToppings.textContent = toppings;
 
   const pizzaImage = document.createElement("img");
-  pizzaImage.src = `/src/images/pizzas/${name.toLowerCase()}.png`;
+  pizzaImage.src = `./images/pizzas/${name.toLowerCase()}.png`;
   pizzaImage.alt = `${name}`;
 
   menuItem.appendChild(pizzaImage);
