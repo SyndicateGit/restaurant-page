@@ -1,27 +1,36 @@
+// Pizza img imports
+import peperonni from "./images/pizzas/peperonni.png";
+
+import hawaiian from "./images/pizzas/hawaiian.png";
+
+import vegetarian from "./images/pizzas/vegetarian.png";
+
+import works from "./images/pizzas/works.png";
+
 function createMenu(){
   const menu = document.createElement("div");
   menu.classList.add("menu");
   
   menu.appendChild(
     createMenuItem(
-    "Pepperoni", "Tomato sauce, Mozarella, Peperroni"
+    "Pepperoni", "Tomato sauce, Mozarella, Peperroni", peperonni
   ));
   menu.appendChild(
     createMenuItem(
-    "Hawaiian", "Tomato sauce, Mozarella, Ham, Pineapple"
+    "Hawaiian", "Tomato sauce, Mozarella, Ham, Pineapple", hawaiian
   ));
   menu.appendChild(
     createMenuItem(
-    "Works", "Tomato sauce, Mozarella, Peperroni, Sausage, Onion, Mushroom, Green Pepper"
+    "Works", "Tomato sauce, Mozarella, Peperroni, Sausage, Onion, Mushroom, Green Pepper", works
   ));
   menu.appendChild(
     createMenuItem(
-    "Vegetarian", "Tomato sauce, Mozarella, Mushroom, Brocolli, Tomatos, Corn"
+    "Vegetarian", "Tomato sauce, Mozarella, Mushroom, Brocolli, Tomatos, Corn", vegetarian
   ));
   return menu;
 }
 
-function createMenuItem(name, toppings){
+function createMenuItem(name, toppings, src){
   const menuItem = document.createElement("div");
   menuItem.classList.add("menu-item");
 
@@ -32,7 +41,7 @@ function createMenuItem(name, toppings){
   pizzaToppings.textContent = toppings;
 
   const pizzaImage = document.createElement("img");
-  pizzaImage.src = `./images/pizzas/${name.toLowerCase()}.png`;
+  pizzaImage.src = src;
   pizzaImage.alt = `${name}`;
 
   menuItem.appendChild(pizzaImage);

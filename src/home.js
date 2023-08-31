@@ -1,3 +1,5 @@
+import chef from "/src/images/chef.png";
+
 function createHome(){
   const home = document.createElement("div");
   home.classList.add("home");
@@ -6,7 +8,7 @@ function createHome(){
   home.appendChild(createP("Made with passion since 1998"));
 
   const img = document.createElement("img");
-  img.src = "./images/chef.png";
+  img.src = chef;
   img.alt = "chef";
   img.id = "chef";
 
